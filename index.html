@@ -21,24 +21,40 @@
               <div class="avtive_h">
               <a class="active" href="index.html">
               <i class="fa fa-th-large icon"></i>
-              Doshboard
+              Doshboard <span class="notife">2</spa>
             </a>
           </div>
           </li>
           <p>Components</p>
-          <li class="link2 grid-container">
-            <div class="item1">
-              <a class="grid" href="index.html">
-              <i class="fas fa-palette icon item2"></i>
-              UI Elements
-                <i class="fa fa-angle-right item3"></i>
-              </div>
-            </a>
+          <li class="collapsible"  style="margin-left: 60px;">
+            <i class="fas fa-palette icon"></i>
+            <a href="#"> UI Elements</a>
+            <i class="fa fa-angle-right  flash"></i>
           </li>
+          <ul class="content">
+              <li class="collap1"> <a href="#">Buttons</a></li>
+              <li class="collap2"> <a href="#">Typography</a></li>
+            </ul>
         </ul>
       </nav>
     </div>
     <script src="bootstrap-5.2.0-dist/js/bootstrap.min.js"></script>
     <script src="icon.js"></script>
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
   </body>
 </html>
