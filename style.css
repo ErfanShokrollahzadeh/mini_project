@@ -9,20 +9,20 @@ body {
 .title {
   height: 100vh;
 }
+.start-p{
+  margin-top: 5px;
+}
 .sidbar {
-  height: 100vh;
+  height: 1000px;
   min-height: calc(100vh - 65px);
   background-color: #0237a5;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
 }
-.avtive_h {
-  margin-left: 40px;
-}
 .notife {
   margin-left: 25px;
-  background-color: red;
+  background-color: #FF52FC;
 }
 ul {
   padding-left: 0 !important;
@@ -39,8 +39,9 @@ a {
 .collapsible {
   color: white;
   cursor: pointer;
-  width: 180px;
-  padding: 5px;
+  width: 238px;
+  padding: 4px;
+  padding-left: 65px;
   border: none;
   text-align: left;
   outline: none;
@@ -57,7 +58,8 @@ a {
   background-color: #0d6efd;
 }
 .collap2 {
-  margin-left: 60px;
+  margin-left: 33px;
+  padding-left: 26px;
 }
 .collap2:hover {
   background-color: #0d6efd;
@@ -118,7 +120,7 @@ p {
   font-size: 14px;
   display: flex;
   margin: 0 0 0 35px;
-  padding-top: 35px;
+  padding-top: 30px;
 }
 .space {
   margin-left: 65px;
@@ -135,8 +137,8 @@ p {
   color: #ffffff;
 }
 .link2 {
-  padding-top: 10px;
-  margin-left: 40px;
+  padding-top: 9px;
+  padding-left: 40px;
 }
 .link2:hover {
   background-color: blue;
