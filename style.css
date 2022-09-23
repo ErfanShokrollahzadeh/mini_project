@@ -9,7 +9,7 @@ body {
 .title {
   height: 100vh;
 }
-.start-p{
+.start-p {
   margin-top: 5px;
 }
 .sidbar {
@@ -22,7 +22,9 @@ body {
 }
 .notife {
   margin-left: 25px;
-  background-color: #FF52FC;
+  background-color: #ff52fc;
+  padding: 4px;
+  border-radius: 42%;
 }
 ul {
   padding-left: 0 !important;
