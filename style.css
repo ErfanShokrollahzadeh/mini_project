@@ -3,6 +3,12 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  height: 100vh;
+}
+.title {
+  height: 100vh;
+}
 .sidbar {
   height: 100vh;
   min-height: calc(100vh - 65px);
@@ -33,16 +39,19 @@ a {
 .collapsible {
   color: white;
   cursor: pointer;
-  width: 200px;
+  width: 180px;
+  padding: 5px;
   border: none;
   text-align: left;
   outline: none;
   font-size: 15px;
 }
+.collapsible:hover {
+  background-color: blue;
+}
 
 .collap1 {
   margin-left: 30px;
-  margin-top: 12px;
 }
 .collap1:hover {
   background-color: #0d6efd;
@@ -51,6 +60,41 @@ a {
   margin-left: 60px;
 }
 .collap2:hover {
+  background-color: #0d6efd;
+}
+.collap3 {
+  padding-right: 15px;
+  margin-left: 60px;
+}
+.collap3:hover {
+  background-color: #0d6efd;
+}
+.collap4 {
+  margin-left: 60px;
+  padding-right: 2px;
+}
+.collap4:hover {
+  background-color: #0d6efd;
+}
+.collap5 {
+  padding-left: 2px;
+  margin-left: 60px;
+}
+.collap5:hover {
+  background-color: #0d6efd;
+}
+.collap6 {
+  padding-left: 12px;
+  margin-left: 60px;
+}
+.collap6:hover {
+  background-color: #0d6efd;
+}
+.collap7 {
+  padding-left: 21px;
+  margin-left: 60px;
+}
+.collap7:hover {
   background-color: #0d6efd;
 }
 .content {
@@ -89,4 +133,33 @@ p {
 .flash {
   margin-left: 25px;
   color: #ffffff;
+}
+.link2 {
+  padding-top: 10px;
+  margin-left: 40px;
+}
+.link2:hover {
+  background-color: blue;
+}
+.link3 {
+  margin-left: -20px;
+  padding: 5px;
+}
+.link3:hover {
+  background-color: blue;
+}
+.link4 {
+  margin-left: -25px;
+  padding: 5px;
+}
+.link4:hover {
+  background-color: blue;
+}
+.button {
+  background-color: red;
+  margin: 0 0 10px 65px;
+  color: white;
+  height: 35px;
+  width: 125px;
+  border-radius: 10px;
 }
