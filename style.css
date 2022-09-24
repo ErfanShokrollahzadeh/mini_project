@@ -284,3 +284,10 @@ p {
 .icon-profile {
   color: pink;
 }
+.icon-profile-next {
+  margin-left: 18px;
+  font-size: 25px;
+}
+a.icon-profile-next {
+  color: black !important;
+}
