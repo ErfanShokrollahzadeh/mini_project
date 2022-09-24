@@ -10,18 +10,75 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
     <title>Document</title>
   </head>
-  <body>
-    <div class="sidbar col-2">
+  <body class="sidbar-icon-only">
+    <div class="container-fluid page-body-wrapper">
+          <nav class="navbar col-lg-12 col-12 px-0 py-0 py-lg-4 d-flex flex-row">
+            <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end" style="margin-top: 60px;">
+              <button class="navbar-toggler navbar-toggler align-self-center fixed" type="button" data-toggle="minimize">
+                <span class="mdi mdi-menu">
+                  <i class="fa fa-bars icon2"></i>
+                </span>
+              </button>
+              <div class="navbar-brand-wrapper">
+                <a href="#" class="navbar-brand brand-logo">
+                  <img class="img1" src="images/logo.png" alt="logo">
+                </a>
+              </div>
+              <h3 class="f-h4">Spica</h3>
+              <h4 class="s-h4">Welcome back, Brandon Haynes</h4>
+              <h4 class="t-h4">Mar 12, 2019 - Apr 10, 2019</h4>
+              <ul class="navbar-nav navbar-nav-right top-right-icons">
+                <li class="nav-item dropdown mr-1 item1-top-icon">
+                  <a href="" >
+                    <i class="fa fa-calendar-times-o icon2"></i>
+                    <span class="notife-top-right1">2</span>
+                  </a>
+                </li>
+                <li class="nav-item dropdown mr-2 item2-top-icon">
+                  <a href="">
+                    <i class="fa fa-envelope-open icon2"></i>
+                    <span class="notife-top-right2">1</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="search-bar navbar-menu-wrapper navbar-search-wrapper d-none d-lg-flex align-items-center">
+                <ul class="navbar-nav mr-lg-2 search">
+                  <li class="nav-item nav-search d-none d-lg-block">
+                    <div class="input-group">
+                      <input type="text" class="form-control search-in" placeholder="Search Here..." aria-label="search" aria-describedby="search">
+                    </div>
+                  </li>
+                </ul>
+                <ul class="navbar-nav navbar-nav-right">
+                  <li class="nav-item nav-profile dropdown show">
+                    <a class=" collapsible2 nav-link dropdown-toggle" href="#" aria-expanded="false">
+                      <img src="images/face5.jpeg" alt="profile" style="width: 49px;">
+                      <span class="nav-profile-name">Eleanor Richardson</span>
+                    </a>
+                    <ul class="content2">
+                      <li class="collap-a"> <i class="fa fa-gear icon-profile"></i> <a href="#">Setting</a></li>
+                      <li class="collap-b"> <i class="fa fa-reply icon-profile"></i> <a href="#">Logout</a></li>
+                    </ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+          </nav>
+        </div>
+    <div class="sidbar col-2" style="margin-top: -263px;">
       <nav class="title">
         <p class="start-p">Navigtion</p>
         <ul>
             <li class="link">
               <div class="avtive_h">
-              <a class="active" href="index.html">
+              <a class="active" href="#">
               <i class="fa fa-th-large icon"></i>
-              Doshboard <span class="notife" style="width:3px ;">2</spa>
+              Doshboard <span class="notife">2</spa>
             </a>
           </div>
           </li>
@@ -29,7 +86,7 @@
           <li class="collapsible">
             <i class="fas fa-palette icon"></i>
             <a href="#"> UI Elements</a>
-            <i class="fa fa-angle-right  flash"></i>
+            <i class="fa fa-angle-down  flash"></i>
           </li>
           <ul class="content">
               <li class="collap1"> <a href="#">Buttons</a></li>
@@ -37,25 +94,25 @@
             </ul><br>
             <li class="link2">
               <i class="fa fa-align-justify icon"></i>
-              <a href="">Form elements</a>
+              <a href="#">Form elements</a>
             </li><br>
             <li class="link3">
               <i class="fa fa-pie-chart icon"></i>
-              <a href="">Charts</a>
+              <a href="#">Charts</a>
             </li><br>
             <li class="link3">
               <i class="fas fa-border-all icon"></i>
-              <a href="">Tables</a>
+              <a href="#">Tables</a>
             </li><br>
             <li class="link4">
               <i class="fa fa-smile-o icon"></i>
-              <a href="">Icons</a>
+              <a href="#">Icons</a>
             </li>
             <p>Pages</p>
             <li class="collapsible">
             <i class="fas fa-user-alt icon"></i>
             <a href="#"> User Pages</a>
-            <i class="fa fa-angle-right  flash"></i>
+            <i class="fa fa-angle-down  flash"></i>
           </li>
             <ul class="content">
               <li class="collap3"> <a href="#">Login</a></li>
@@ -75,10 +132,42 @@
         </a>
       </nav>
     </div>
+     <!-- base:js -->
+  <script src="vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <script src="vendors/chart.js/Chart.min.js"></script>
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/hoverable-collapse.js"></script>
+  <script src="js/template.js"></script>
+  <!-- endinject -->
+  <!-- plugin js for this page -->
+  <!-- End plugin js for this page -->
+  <!-- Custom js for this page-->
+  <script src="js/dashboard.js"></script>
+  <!-- End custom js for this page-->
     <script src="bootstrap-5.2.0-dist/js/bootstrap.min.js"></script>
     <script src="icon.js"></script>
     <script>
       var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
+    <script>
+      var coll = document.getElementsByClassName("collapsible2");
       var i;
 
       for (i = 0; i < coll.length; i++) {

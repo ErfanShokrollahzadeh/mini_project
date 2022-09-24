@@ -3,8 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
-body {
-  height: 100vh;
+body,
+html {
+  overflow-x: hidden;
+  padding-right: 0 !important;
 }
 .title {
   height: 100vh;
@@ -21,10 +23,15 @@ body {
   flex-wrap: nowrap;
 }
 .notife {
-  margin-left: 25px;
-  background-color: #ff52fc;
-  padding: 4px;
-  border-radius: 42%;
+  position: absolute;
+  left: 14%;
+  width: 21px;
+  height: 21px;
+  border-radius: 10px;
+  top: 84px;
+  font-size: 10px;
+  line-height: 21px;
+  background-color: #1cbccd;
 }
 ul {
   padding-left: 0 !important;
@@ -113,6 +120,9 @@ a {
   margin-right: 15px;
   line-height: 1;
 }
+.icon2 {
+  color: #ffffff;
+}
 .avtive_h {
   padding: 10px;
   background-color: #183188;
@@ -166,4 +176,111 @@ p {
   height: 35px;
   width: 125px;
   border-radius: 10px;
+}
+.page-body-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 1200px !important;
+  height: 263px;
+  margin-left: 237px !important;
+  background-image: url("../images/navbar-cover.jpeg");
+}
+.fixed {
+  margin-top: -110px;
+}
+.img1 {
+  margin-top: -110px;
+  width: 50px;
+  margin-left: 25px;
+}
+.f-h4 {
+  color: #ffffff;
+  margin-top: -95px;
+  margin-left: -10px;
+}
+.s-h4 {
+  color: #ffffff;
+  margin-left: 15px;
+  margin-top: -91px;
+}
+.t-h4 {
+  color: #ffffff;
+  margin-left: 200px;
+  margin-top: -91px;
+}
+.top-right-icons {
+  margin-top: -97px;
+  font-size: 22px;
+}
+.item2-top-icon {
+  margin-left: 85px;
+  margin-top: -33px;
+}
+.notife-top-right1 {
+  position: absolute;
+  left: 53%;
+  width: 21px;
+  height: 21px;
+  border-radius: 10px;
+  top: -4px;
+  font-size: 10px;
+  line-height: 21px;
+  background-color: #0591dc;
+}
+.notife-top-right2 {
+  position: absolute;
+  left: 53%;
+  width: 21px;
+  height: 21px;
+  border-radius: 10px;
+  top: -4px;
+  font-size: 10px;
+  line-height: 21px;
+  background-color: red;
+}
+.search-bar {
+  background-color: #ffffff;
+  width: 1160px;
+  height: 65px;
+}
+.search {
+  width: 700px;
+}
+.search-in {
+  height: 65px;
+}
+.collapsible2 {
+  color: black !important;
+  cursor: pointer;
+  width: 238px;
+  padding: 4px;
+  padding-left: 65px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.content2 {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #37413e;
+  margin-bottom: -50px !important;
+}
+.collap-a {
+  color: black;
+  width: 108%;
+}
+.collap-a:hover {
+  background-color: blue;
+}
+.collap-b {
+  color: black;
+  width: 108%;
+}
+.collap-b:hover {
+  background-color: blue;
+}
+.icon-profile {
+  color: pink;
 }
