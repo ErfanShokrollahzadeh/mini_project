@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -137,6 +139,60 @@
           <button class="button">Upgrade to pro</button>
         </a>
       </nav>
+      <!-- main page -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row main-body">
+                  <div class="card">
+                    <div class="card-body">
+                      <p class="card-title">Website Audience Metrics</p>
+                      <p class="text-muted">25% more traffic than previous week</p>
+                      <div class="row mb-3">
+                        <div class="col-md-7">
+                          <div d-flex justify-content-between traffic-status>
+                            <div class="item">
+                              <p class="mb-">User</p>
+                              <h5 class="font-weight-bold under-tag-p">93,956</h5>
+                              <div class="color-border1"></div>
+                            </div>
+                            <div class="item-main-div1">
+                              <p class="mb-">Bounce Rate</p>
+                              <h5 class="font-weight-bold under-tag-p">58,605</h5>
+                              <div class="color-border2"></div>
+                            </div>
+                            <div class="item-main-div2">
+                              <p class="mb-">Page Views</p>
+                              <h5 class="font-weight-bold under-tag-p">78,254</h5>
+                              <div class="color-border3"></div>
+                            </div>
+                          </div>
+                          <div class="date">
+                            <ul class="nav-date justify-content-md-end"  role="tablist">
+                              <li class="nav-date-item1">
+                                <a class="nav-link active tag-a-date" style="background-color: #c8c8c8;" data-toggle="pill" href="#" role="tab" aria-controls="pills-home" aria-selected="true">
+                                  Day
+                                </a>
+                              </li>
+                              <li class="nav-date-item2">
+                                <a class="nav-link tag-a-date"  data-toggle="pill" href="#pills-career" role="tab" aria-controls="pills-profile" aria-selected="true">
+                                  Week
+                                </a>
+                              </li>
+                              <li class="nav-date-item3">
+                                <a class="nav-link tag-a-date" data-toggle="pill" href="#pills-music" role="tab" aria-controls="pills-contact" aria-selected="true">
+                                  Month
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- <canvas id="audience-chart" style="display: block; height: 246px; width: 493px;" width="986" height="492" class="chartjs-render-monitor"></canvas> -->
+                      </div>
+                    </div>
+                  </div>
+          </div>
+        </div>
+      </div>
     </div>
      <!-- base:js -->
   <script src="vendors/js/vendor.bundle.base.js"></script>
@@ -188,5 +244,6 @@
         });
       }
     </script>
+    <script src="js/off-canvas.js"></script>
   </body>
 </html>
